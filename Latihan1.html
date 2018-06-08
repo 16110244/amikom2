@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+	<title>jQuery Selectors</title>
+	<script src="js/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("p").hide();
+			$("body").css("background","black");
+			$("h2").css("text-transform","uppercase").css("color","white").slideUp(500).slideDown(500);
+		});
+	});
+	</script>
+</head>
+<body>
+	<h2>Universitas Amikom</h2>
+	<p>Informatika</p>
+	<p>Web Programming</p>
+	<button>Hide Paragraph</button>
+</body>
+</html>
